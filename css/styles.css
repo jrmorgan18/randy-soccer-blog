@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #004c8c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links a:hover {
+    color: #dd352e;
+}
+
+/* Hero section */
+.hero {
+    background-image: url("images/soccer-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Latest News section */
+.latest-news {
+    padding: 2rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+article h3 {
+    margin: 0.5rem 0;
+}
+
+/* Featured Leagues section */
+.featured-leagues {
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+.league-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+    text-align: center;
+}
+
+.league-grid img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #004c8c;
+    color: #ffffff;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links li {
+    margin-left: 1rem;
+}
+
+.social-links img {
+    width: 24px;
+    height: auto;
+}
